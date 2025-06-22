@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静的ファイル配信サーバー</title>
+</head>
+
+<body>
+    <h1>テンプレートエンジンのテスト</h1>
+    {{ if is_test }}
+    <p>これはテストです</p>
+    {{ else }}
+    <p>これは表示されません</p>
+    {{ endif }}
+
+    {{ if is_test2 }}
+    <p>これは表示されません</p>
+    {{ else }}
+    <p>これはテスト2です</p>
+    {{ endif }}
+
+    {{ for item in items }}
+    <li>
+        {{ item }}
+    </li>
+    {{ endfor }}
+</body>
+
+</html>
